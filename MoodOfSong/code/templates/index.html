@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <title>Song mood classification based on lyrics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+h1{
+ position:absolute;
+ top:10%;
+ left:30%;
+ color:white;
+ font-family:Copperplate Gothic;
+ font-size:400%;
+ font-style:bold;
+ text-shadow: 6px 4px black;
+}
+
+h2{
+ position:absolute;
+ top:35%;
+ left:10%;
+ color:white;
+ font-family:Copperplate Gothic;
+ font-size:300%;
+ font-style:bold;
+}
+
+#abc{
+ position:absolute;
+ top:50%;
+ left:10%;
+}
+
+#def{
+position:absolute;
+ top:70%;
+ left:10%;
+}
+
+input[type=submit] {
+  background-color:green;
+  color: white;
+  font-size:100%;
+  font-style:bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+    </style>
+  </head>
+  <body>
+  <!--<img src="music.jpg" style="max-width:100%;height:auto;">-->
+   <img src="http://sf.co.ua/15/09/wallpaper-10c4f2.jpg" style="max-width:100%;height:auto;">
+    <h1>Welcome to K3G Music </h1>
+    <h2>Please enter the songtext below</h2>
+    <form method=post action="/results">
+     <div id="abc">
+      <textarea rows="10" cols="50" id="songtext" name="song" placeholder="Enter lyrics.."></textarea>
+     </div>
+     <div id="def">
+	  <input type=submit value='Submit songtext' name='submit_btn'>
+	 </div>
+    </form>
+
+  </body>
+</html>
