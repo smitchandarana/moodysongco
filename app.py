@@ -1,6 +1,6 @@
 # pythonspot.com
 from flask import Flask, render_template, flash, request
-from  MoodOfSong.code.FinalModel import ngram_vectorize, model_predict
+from FinalModel import ngram_vectorize, model_predict
 import pickle
 from googletrans import Translator
 translator = Translator()
@@ -69,8 +69,8 @@ def lyrics_form():
     return '''
     <form method ="POST">
     <body background="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" style="max-width:30%;height:40%;">
-        <h1>Welcome to K3G Music</h1>
-        <h2>Please enter the Lyrics below:</h2>
+
+        <h1>Please enter the Lyrics below:</h1>
         <textarea name="lyrics" rows="30" cols="90" value="Enter ther lyrics" style="background-color:#FCF5D8;color:#AD8C08;"></textarea></br>
         <input type ="submit" value="Submit songtext" name="sbmtbtn"></form>
     '''
